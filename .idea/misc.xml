@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/drawable/imageshape.xml" value="0.221875" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/drawable/list_border.xml" value="0.221875" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/activity_main.xml" value="0.21603260869565216" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/content_main.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/custom_item.xml" value="0.20572916666666666" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/fragment_lights.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/fragment_safety.xml" value="0.18" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/fragment_warning.xml" value="0.21422101449275363" />
+        <entry key="..\:/Users/Wangari/AndroidStudioProjects/DashboardLights/app/src/main/res/layout/listactivity.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

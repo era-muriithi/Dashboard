@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_layout"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/list_border"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:background="@drawable/imageshape"
+        android:scaleType="centerCrop"
+        android:src="@drawable/transmission" />
+
+    <TextView
+        android:id="@+id/lightname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginLeft="77dp"
+        android:layout_marginTop="20dp"
+        android:layout_toEndOf="@+id/img"
+        android:layout_toRightOf="@+id/img"
+        android:gravity="center"
+        android:text="John Mark"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

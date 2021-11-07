@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0707"
+    tools:context=".Safety">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ListView
+        android:id="@+id/lightslist"
+        android:background="#0288D1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="1dp"
+        android:textColor="#FFF"
+        android:divider="@null"
+        />
+
+</FrameLayout>
