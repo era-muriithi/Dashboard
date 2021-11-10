@@ -17,8 +17,13 @@ import android.widget.TextView;
 
 public class Warning extends Fragment {
     ListView listView;
-    String [] lightname = {"Check Engine", "Brake Fluid", "Airbag"};
-    int [] images = {R.drawable.checklight, R.drawable.brakefluid, R.drawable.airbagwarning};
+    String [] lightname = {"Check Engine", "Brake Warning Light", "Battery Charge Warning Light", "Oil Pressure Warning light",
+            "Engine Temperature Warning Light", "Steering Wheel Lock", "Trailer Tow Hitch Warning", "Parking Brake Light", "Power Steering Warning Light",
+    "Seat Belt Indicator", "Master Warning Light", "Distance Warning", "Catalytic Converter Warning", "Brake Lights Warning", "Automatic Gearbox Warning",
+    "All Wheel Drive (AWD/4WD)", "Airbag Indicator", "4 Wheel Drive (4WD) LOCK Indicator Light"};
+    int [] images = {R.drawable.checklight, R.drawable.brakefluid, R.drawable.battery, R.drawable.oilpressure, R.drawable.temperaturewarning,
+    R.drawable.wheellock, R.drawable.tow, R.drawable.parkingbrake, R.drawable.powersteering, R.drawable.seatbelt, R.drawable.master, R.drawable.distance,
+    R.drawable.catalytic, R.drawable.brakelight, R.drawable.autogearbox, R.drawable.awd, R.drawable.airbagwarning, R.drawable.awdlock};
     Context context;
     ListViewAdapter adapter;
 

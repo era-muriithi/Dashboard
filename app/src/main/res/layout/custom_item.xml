@@ -11,22 +11,21 @@
         android:layout_width="75dp"
         android:layout_height="75dp"
         android:background="@drawable/imageshape"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/transmission" />
 
     <TextView
         android:id="@+id/lightname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="77dp"
-        android:layout_marginLeft="77dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="20dp"
         android:layout_toEndOf="@+id/img"
         android:layout_toRightOf="@+id/img"
         android:gravity="center"
         android:text="John Mark"
         android:textColor="#FFFFFF"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
 
 
