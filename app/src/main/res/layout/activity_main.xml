@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#C2185B"
+    android:background="#00507D"
     tools:context=".MainActivity">
 
     <com.google.android.material.tabs.TabLayout
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#F57C00"
-        app:tabTextColor="#ffffff"></com.google.android.material.tabs.TabLayout>
+        app:tabTextColor="#ffffff" />
 
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"

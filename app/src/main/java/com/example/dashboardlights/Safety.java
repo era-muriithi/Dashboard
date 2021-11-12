@@ -13,9 +13,10 @@ import android.widget.ListView;
 
 public class Safety extends Fragment {
     ListView listView;
-    String [] lightname = {"Check Engine", "Brake Fluid", "Airbag"};
-    int [] images = {R.drawable.checklight, R.drawable.brakefluid, R.drawable.airbagwarning};
-    Context context;
+    String [] lightname = {"Transmission Temperature", "Tire Pressure Warning Light", "Traction Control Off", "Traction Control Light", "Service Soon", "Security Alert",
+    "Reduced Power", "PowerTrain Fault", "Gas/Fuel Cap", "ESP Fault/Traction Control Malfunction", "Electric Park Brake", "Low Brake Fluid"};
+    int [] images = {R.drawable.transmissiontempertaure, R.drawable.lowtirepressure, R.drawable.tractionoff, R.drawable.tractionon, R.drawable.servicesoon, R.drawable.securityalert,
+    R.drawable.reducedpower, R.drawable.powertrain, R.drawable.fuelcap, R.drawable.espfault, R.drawable.electricparkbrake, R.drawable.brakefluidlow};
     ListViewAdapter adapter;
 
 

@@ -16,5 +16,6 @@
             android:dividerHeight="3dp"
             android:textColor="#FFF"
             android:divider="@null"
+            android:scrollbars="none"
             />
 </FrameLayout>
