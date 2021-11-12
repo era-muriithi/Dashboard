@@ -29,6 +29,9 @@ public class MyAdapter extends FragmentPagerAdapter {
             case 2:
                 Lights lightsFragments = new Lights();
                 return lightsFragments;
+            case  3:
+                thers thersFragment = new thers();
+                return thersFragment;
             default:
                 return null;
         }

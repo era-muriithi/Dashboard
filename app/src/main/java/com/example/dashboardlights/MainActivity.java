@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Warning Lights"));
         tabLayout.addTab(tabLayout.newTab().setText("Safety Lights"));
         tabLayout.addTab(tabLayout.newTab().setText("Lights"));
+        tabLayout.addTab(tabLayout.newTab().setText("Others"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
         final MyAdapter adapter = new MyAdapter(this, getSupportFragmentManager(),tabLayout.getTabCount());
         viewPager.setAdapter(adapter);

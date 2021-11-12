@@ -44,6 +44,6 @@ public class Warning extends Fragment {
 
             return rootView;
 
-        };
+        }
 
     }
