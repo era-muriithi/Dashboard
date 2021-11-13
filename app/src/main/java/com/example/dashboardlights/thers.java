@@ -13,8 +13,8 @@ import android.widget.ListView;
 
 public class thers extends Fragment {
     ListView listView;
-    String [] lightname;
-    int [] images;
+    String [] lightname = {"Recirculated Cabin Air", "Hill Descent Control", "Cruise Control", "Washer Fluid Reminder", "Rear Window Defrost", "Windshield Defrost"};
+    int [] images = {R.drawable.recirculated, R.drawable.hilldescent, R.drawable.cruisecontrol, R.drawable.washer, R.drawable.reardefrost, R.drawable.windshielddefrost};
     ListViewAdapter adapter;
 
 
