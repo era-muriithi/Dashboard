@@ -11,8 +11,8 @@
         android:id="@+id/tabLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#F57C00"
-        app:tabIndicatorColor="#C2185B"
+        android:background="#0097A7"
+        app:tabIndicatorColor="#E64A19"
         app:tabTextColor="#ffffff" />
 
     <androidx.viewpager.widget.ViewPager
@@ -21,5 +21,5 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tabLayout"
         android:layout_centerInParent="true"
-        tools:layout_editor_absoluteX="8dp" />
+        />
 </RelativeLayout>

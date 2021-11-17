@@ -3,7 +3,10 @@ package com.example.dashboardlights;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TableLayout;
 
@@ -27,15 +30,17 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Lights"));
         tabLayout.addTab(tabLayout.newTab().setText("Others"));
         tabLayout.setTabGravity(TabLayout.GRAVITY_FILL);
-        final MyAdapter adapter = new MyAdapter(this, getSupportFragmentManager(),tabLayout.getTabCount());
+        final MyAdapter adapter = new MyAdapter(this, getSupportFragmentManager(), tabLayout.getTabCount());
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            public void onTabSelected(TabLayout.Tab tab){
+
+            public void onTabSelected(TabLayout.Tab tab) {
                 viewPager.setCurrentItem(tab.getPosition());
 
             }
-            public void onTabUnselected(TabLayout.Tab tab){
+
+            public void onTabUnselected(TabLayout.Tab tab) {
 
 
             }
@@ -47,5 +52,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
+
     }
 }
