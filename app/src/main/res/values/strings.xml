@@ -15,5 +15,6 @@
         This is because when you set the left, right or top,bottom constraints bigger than the view it self,
         the view gets centered between the two constraints i.e the bias is set to 50%.
         You can also move view up/down or right/left by setting the bias your self. Play with it a
-        bit and you will see how it affects the views position.</string>
+        bit and you will see how it affects the views position.allowed by parent width to render
+       </string>
 </resources>
