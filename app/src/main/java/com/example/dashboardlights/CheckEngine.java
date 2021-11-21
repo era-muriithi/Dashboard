@@ -4,6 +4,7 @@ import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
@@ -65,6 +66,18 @@ public class CheckEngine extends AppCompatActivity {
                 model.setError("input required");
             }
 
+        }
+
+        public void onClickmaps(View view){
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Uri intentUri = Uri.parse("geo:0,0?q=garage");
+                Intent mapintent = new Intent(Intent.ACTION_VIEW, intentUri);
+                mapintent.setPackage("com.google.android.apps.maps");
+                startActivity(mapintent);
+            }
+        }, 1000);
         }
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
