@@ -5,7 +5,7 @@
     <!-- White foreground. -->
     <item android:bottom="1dp">
         <shape>
-            <solid android:color="#375D73" />
+            <solid android:color="#0097A7" />
             <corners android:radius="5dp" />
         </shape>
     </item>
