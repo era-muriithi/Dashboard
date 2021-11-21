@@ -1,8 +1,12 @@
 package com.example.dashboardlights;
 
+import android.app.SearchManager;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -13,7 +17,9 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class CheckEngine extends AppCompatActivity {
-    TextView lighttitle;
+
+    EditText model;
+    TextView lighttitle, more_info;
     ImageView imageView;
     ListView lightlist;
     TextView lightdeatils;
@@ -41,6 +47,18 @@ public class CheckEngine extends AppCompatActivity {
 
         // showing the back button in action bar
         actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+        public void onClick(View view){
+            more_info = findViewById(R.id.info);
+            model = findViewById(R.id.model);
+            String model_name = model.getText().toString();
+            Intent intent = getIntent();
+            String receivedName = intent.getStringExtra("name");
+            String query = receivedName +" "+ model_name;
+
+            Intent browserIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+            browserIntent.putExtra(SearchManager.QUERY, query);
+            startActivity(browserIntent);
         }
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
