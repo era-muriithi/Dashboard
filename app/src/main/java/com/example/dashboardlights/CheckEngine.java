@@ -16,6 +16,7 @@ public class CheckEngine extends AppCompatActivity {
     TextView lighttitle;
     ImageView imageView;
     ListView lightlist;
+    TextView lightdeatils;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,12 +27,15 @@ public class CheckEngine extends AppCompatActivity {
         lighttitle = findViewById(R.id.light_title);
         imageView = findViewById(R.id.lightimage);
         lightlist = findViewById(R.id.lightslist);
+        lightdeatils = findViewById(R.id.light_details);
 
         Intent intent = getIntent();
         String receivedName = intent.getStringExtra("name");
         int receivedImage = intent.getIntExtra("image", 0);
+        String received_details = intent.getStringExtra("details");
         lighttitle.setText(receivedName);
         imageView.setImageResource(receivedImage);
+        lightdeatils.setText(received_details);
 
         ActionBar actionBar = getSupportActionBar();
 
