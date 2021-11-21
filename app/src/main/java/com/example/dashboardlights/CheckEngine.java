@@ -4,6 +4,7 @@ import android.app.SearchManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
@@ -56,9 +57,14 @@ public class CheckEngine extends AppCompatActivity {
             String receivedName = intent.getStringExtra("name");
             String query = receivedName +" "+ model_name;
 
-            Intent browserIntent = new Intent(Intent.ACTION_WEB_SEARCH);
-            browserIntent.putExtra(SearchManager.QUERY, query);
-            startActivity(browserIntent);
+            if (!TextUtils.isEmpty(model_name)){
+                Intent browserIntent = new Intent(Intent.ACTION_WEB_SEARCH);
+                browserIntent.putExtra(SearchManager.QUERY, query);
+                startActivity(browserIntent);
+            } else {
+                model.setError("input required");
+            }
+
         }
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
