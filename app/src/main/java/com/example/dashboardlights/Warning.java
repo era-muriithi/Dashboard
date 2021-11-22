@@ -21,12 +21,13 @@ import android.widget.TextView;
 public class Warning extends Fragment {
 
     ListView listView;
-    String[] lightname = {"Check Engine", "Brake Warning Light", "Battery Charge Warning Light", "Oil Pressure Warning light",
+    String[] lightname = {"Check Engine", "Brake Warning Light", "Operate Pedal",
+            "Battery Charge Warning Light", "Oil Pressure Warning light",
             "Engine Temperature Warning Light", "Steering Wheel Lock", "Trailer Tow Hitch Warning", "Parking Brake Light", "Power Steering Warning Light",
             "Seat Belt Indicator", "Master Warning Light", "Distance Warning", "Catalytic Converter Warning", "Brake Lights Warning", "Automatic Gearbox Warning",
             "All Wheel Drive (AWD/4WD)", "Airbag Indicator", "4 Wheel Drive (4WD) LOCK Indicator Light", "Door Ajar", "Hood/Bonnet Open", "Low Fuel Level", "Adaptive Suspension Dampers",
             "Key Fob Battery Low", "Ignition Switch Warning", "Glow Plug Indicator", "Fuel Filter Warning", "Water Fluid Filter Warning"};
-    int[] images = {R.drawable.checklight, R.drawable.brakefluid, R.drawable.battery, R.drawable.oilpressure, R.drawable.temperaturewarning,
+    int[] images = {R.drawable.checklight, R.drawable.brakefluid, R.drawable.operate,R.drawable.battery, R.drawable.oilpressure, R.drawable.temperaturewarning,
             R.drawable.wheellock, R.drawable.tow, R.drawable.parkingbrake, R.drawable.powersteering, R.drawable.seatbelt, R.drawable.master, R.drawable.distance,
             R.drawable.catalytic, R.drawable.brakelight, R.drawable.autogearbox, R.drawable.awd, R.drawable.airbagwarning, R.drawable.awdlock, R.drawable.doorajar, R.drawable.bonnet,
             R.drawable.lowfuel, R.drawable.suspension, R.drawable.keyfob, R.drawable.ignination, R.drawable.glow, R.drawable.fuelfilter, R.drawable.water};
@@ -37,6 +38,10 @@ public class Warning extends Fragment {
     "Indicator light turns on when the handbrake is on. If it lit continuously, " +
             "it means that hydraulic pressure has been lost in one side of the brake system or that the fluid level in the master cylinder" +
             " is dangerously low (due to a leak somewhere in the brake system).",
+
+            "The foot on pedal warning light either illuminate or flashes in yellow. If the operate pedal light illuminates, it means the clutch pedal or brakes pedal " +
+                    "in Automatic vehicles must be depressed " +
+                    "to start the engine when in Autostop mode. If it flashes, it means the clutch must be pressed for a main start of the engine.",
             "Indicator light means that the car’s charging system is short of power or is not charging properly. " +
                     "It normally indicates a problem with the battery itself or the alternator.",
     "Indicator light means loss of oil pressure, meaning lubrication is low or lost completely. Immediately check the oil level and pressure.",

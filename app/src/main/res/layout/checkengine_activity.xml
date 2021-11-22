@@ -112,6 +112,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Share"
+        android:onClick="onClickShare"
+        android:clickable="true"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -119,7 +121,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repair"
-        app:drawableLeftCompat="@drawable/share" />
+        app:drawableLeftCompat="@drawable/share"
+        android:focusable="true" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

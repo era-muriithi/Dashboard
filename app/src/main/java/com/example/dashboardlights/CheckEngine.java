@@ -1,7 +1,9 @@
 package com.example.dashboardlights;
 
 import android.app.SearchManager;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
@@ -12,6 +14,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.Toolbar;
 
 import androidx.annotation.NonNull;
@@ -21,16 +24,16 @@ import androidx.appcompat.app.AppCompatActivity;
 public class CheckEngine extends AppCompatActivity {
 
     EditText model;
-    TextView lighttitle, more_info;
+    TextView lighttitle, more_info, share;
     ImageView imageView;
     ListView lightlist;
     TextView lightdeatils;
+    Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.checkengine_activity);
-
 
         lighttitle = findViewById(R.id.light_title);
         imageView = findViewById(R.id.lightimage);
@@ -78,6 +81,14 @@ public class CheckEngine extends AppCompatActivity {
                 startActivity(mapintent);
             }
         }, 1000);
+        }
+
+        public void onClickShare(View view){
+        share = findViewById(R.id.share);
+            Intent intent = getIntent();
+            intent.setType("image/jpeg");
+            intent.setPackage("com.whatsapp");
+            startActivity(intent);
         }
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
