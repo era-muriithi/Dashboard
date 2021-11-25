@@ -80,7 +80,7 @@ public class CheckEngine extends AppCompatActivity {
                 mapintent.setPackage("com.google.android.apps.maps");
                 startActivity(mapintent);
             }
-        }, 1000);
+        }, 3000);
         }
 
         public void onClickShare(View view){

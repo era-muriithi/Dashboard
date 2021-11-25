@@ -14,8 +14,9 @@
             android:exported="true" />
 
         <activity android:name=".CheckEngine"/>
+        <activity android:name=".MainActivity"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".SplashScreen" android:theme="@style/Theme.AppCompat.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
