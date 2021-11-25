@@ -83,6 +83,8 @@
                 android:layout_marginTop="24dp"
                 android:textColor="#00C2FF"
                 android:textSize="15sp"
+                android:onClick="onClick"
+                android:clickable="true"
                 app:layout_constraintTop_toBottomOf="@+id/light_details"
                 app:layout_constraintLeft_toRightOf="@+id/model"
                 android:textStyle="bold" />
@@ -96,6 +98,8 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
+        android:onClick="onClickmaps"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -108,6 +112,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Share"
+        android:onClick="onClickShare"
+        android:clickable="true"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:layout_marginTop="20dp"
@@ -115,7 +121,8 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/repair"
-        app:drawableLeftCompat="@drawable/share" />
+        app:drawableLeftCompat="@drawable/share"
+        android:focusable="true" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
