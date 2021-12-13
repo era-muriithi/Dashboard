@@ -83,12 +83,16 @@ public class CheckEngine extends AppCompatActivity {
         }, 3000);
         }
 
-        public void onClickShare(View view){
+    public void onClickShare(View view){
         share = findViewById(R.id.share);
-            Intent intent = getIntent();
-            intent.setType("image/jpeg");
-            intent.setPackage("com.whatsapp");
-            startActivity(intent);
+        lighttitle = findViewById(R.id.light_title);
+        Intent intent = new Intent(Intent.ACTION_SEND);
+        String lights_nmae = lighttitle.getText().toString();
+        lighttitle.setText(lights_nmae);
+        intent.setType("text/plain");
+        intent.putExtra(Intent.EXTRA_TEXT, lights_nmae);
+        intent.setPackage("com.whatsapp");
+        startActivity(intent);
         }
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
